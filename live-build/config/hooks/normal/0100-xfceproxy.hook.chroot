@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+useradd --system --no-create-home --shell /usr/sbin/nologin xfceproxy || true
+systemctl enable xfceproxy.service
